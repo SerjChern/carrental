@@ -1,0 +1,144 @@
+.how_to_order{
+  background: url("../images/lambo-background.png") no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  .how_to_order__container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    .order_box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 717px;
+      padding: 40px;
+      background: rgba(33, 27, 30, 0.7);
+      .order_box__title{
+        font-size: 35px;
+        text-transform: uppercase;
+        font-family: BebasNeueRegular, sans-serif;
+        color: white;
+        line-height: 0.857;
+      }
+      .order_box__description{
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        margin-top: 44px;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 650px;
+      }
+    }
+  }
+  .order_popup_wrapper {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 999;
+    background-color: rgba(24, 25, 26, 0.6);
+    display: none;
+
+    .order_popup{
+      width: 508px;
+      background-color: #18191a;
+      z-index: 1000;
+      position: fixed;
+      max-height: 1080px;
+      top: calc(50% - 444px);
+      left: calc(50% - 254px);
+      display: none;
+      .close {
+        position: absolute;
+        left: 94%;
+        top: 1.5%;
+      }
+      .dummy_top {
+        padding-bottom: 23px;
+      }
+      .dummy_bottom {
+        padding-top: 23px;
+      }
+      .underline{
+        border-top: 1px solid #ffde46;
+        width: 50px;
+        box-shadow: 0px 0px 10px 3px rgba(255,222,70,0.6);
+      }
+      .top {
+        margin-left: 17px;
+      }
+      .bottom {
+        margin-left: 440px;
+      }
+      .order_form__title {
+        padding-top: 43px;
+        padding-bottom: 52px;
+        font-size: 20px;
+        font-family: BebasNeueRegular, sans-serif;
+        text-align: center;
+        color: white;
+        line-height: 1.05;
+      }
+      .order_form {
+        padding-left: 80px;
+        .order_data {
+          .order_data_title {
+            font-size: 18px;
+            font-family: Roboto, sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.167;
+            padding-bottom: 19px;
+          }
+        }
+        .rental_time {
+          display: flex;
+          justify-content: space-between;
+          width: 380px;
+        }
+        .personal_data {
+          .personal_data_title {
+            font-size: 18px;
+            font-family: Roboto, sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.167;
+            padding-bottom: 19px;
+            padding-top: 22px;
+          }
+        }
+        .message {
+          .message_title {
+            font-size: 18px;
+            font-family: Roboto, sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.167;
+            padding-bottom: 19px;
+            padding-top: 22px;
+          }
+        }
+      }
+      .oferta {
+        width: 350px;
+        padding-left: 95px;
+        padding-bottom: 50px;
+        font-size: 13px;
+        font-family: Roboto, sans-serif;
+        color: rgb(196, 191, 186);
+        text-decoration: underline;
+        text-align: center;
+        line-height: 1.616;
+        -moz-transform: matrix( 1.00058274327764,0,0,1.00023784378298,0,0);
+        -webkit-transform: matrix( 1.00058274327764,0,0,1.00023784378298,0,0);
+        -ms-transform: matrix( 1.00058274327764,0,0,1.00023784378298,0,0);
+      }
+    }
+  }
+
+
+}

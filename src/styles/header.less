@@ -1,0 +1,109 @@
+.header {
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 31px;
+    padding-bottom: 24px;
+    z-index: 1;
+    .menu_320__wrapper{
+      height: 100%;
+      width: 100%;
+      backdrop-filter: blur(3px);
+      position: fixed;
+      top: 0;
+      left:0;
+      z-index: 999;
+      background-color: rgba(24, 25, 26, 0.6);
+      display: none;
+      transition: all 0.3s;
+      .menu_320 {
+        transition: all 0.3s;
+        display: none;
+        width: 250px;
+        background-color: #18191a;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        right:0;
+        height: 100vh;
+        .dummy_top {
+          padding-bottom: 16px;
+        }
+        .dummy_bottom {
+          padding-top: 11px;
+        }
+        .bottom{
+          margin-left: 228px;
+        }
+        .underline{
+          border-top: 1px solid #ffde46;
+          width: 22px;
+          box-shadow: 0px 0px 10px 3px rgba(255,222,70,0.6);
+        }
+        .menu_320_header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 18px 20px 61px 21px;
+          .menu_320_h1{
+            font-size: 25px;
+            font-family: Bebas Neue, sans-serif;
+            color: rgb(248, 229, 165);
+            line-height: 0.6;
+          }
+        }
+        .menu_320__list{
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          padding-left: 21px;
+          padding-bottom: 5px;
+          .menu_320__item {
+            margin-bottom: 20px;
+            .menu_320__link{
+              text-decoration: none;
+              font-size: 14px;
+              font-family: Roboto, sans-serif;
+              color: rgb(255, 255, 255);
+              line-height: 1.071;
+            }
+          }
+
+        }
+      }
+    }
+
+    .menu {
+      .menu_burger {
+        display: none;
+      }
+      .menu__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 708px;
+        .menu__item {
+          transition: all 0.3s;
+          &:hover {
+            transform: scale(1.1);
+          }
+          .menu__link {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Roboto, sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.5;
+            &:hover {
+              color: #f8e5a5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
